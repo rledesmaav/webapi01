@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "7b328e11-52d8-4fdd-965e-fa5812858fa0",
+		"name": "CustomerApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lista de customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:44399/api/customer"
+			},
+			"response": []
+		},
+		{
+			"name": "Lista de customers por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:44399/api/customer/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Ingresar customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"CustomerFirstName\": \"Cosme\",\n\t\"CustomerLastName\": \"Fulanito\",\n\t\"IsActive\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:44399/api/customer"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

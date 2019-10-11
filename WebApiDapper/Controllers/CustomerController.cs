@@ -24,7 +24,7 @@ namespace WebApplication2.Controllers
         }
 
         // GET: api/Customer/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}")]
         public Customer Get(int id)
         {
             return _ourCustomerRespository.GetSingleCustomer(id);
